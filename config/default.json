@@ -1,0 +1,65 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "base_url": "https://backend.paperdaz.com",
+  "app_url": "http://staging.paperdaz.com",
+  "admin_url": "https://admin.paperdaz.com",
+  "paginate": {
+    "default": 10,
+    "max": 9999999
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "+Erqnl5F0JnIsW++d9U0BfwpJ6w=",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "oauth": {
+      "redirect": "/",
+      "google": {
+        "key": "<google oauth key>",
+        "secret": "<google oauth secret>",
+        "scope": [
+          "email",
+          "profile",
+          "openid"
+        ]
+      },
+      "facebook": {
+        "key": "<facebook oauth key>",
+        "secret": "<facebook oauth secret>"
+      },
+      "twitter": {
+        "key": "<twitter oauth key>",
+        "secret": "<twitter oauth secret>"
+      }
+    }
+  },
+  "email_user":"postmaster@main.paperdaz.com",
+  "email_password":"ffc55496adf8369aa033ead37f401766-48d7d97c-d03cb53b",
+  "email_from":"Paperdaz <hello@paperdaz.com>",
+  "mysql_local": "mysql://root@localhost:3306/paperdaz_feathers_db",
+  "mysql": "mysql://doadmin:AVNS_bZSt9JOs4ea_H1v9TVs@paperdaz-database-do-user-5115110-0.b.db.ondigitalocean.com:25060/dev-db",
+  "mysql_do": "mysql://doadmin:AVNS_bZSt9JOs4ea_H1v9TVs@paperdaz-database-do-user-5115110-0.b.db.ondigitalocean.com:25060/dev-db",
+  "mysql_heroku": "mysql://ba153c2ce3a4b1:e11d98da@us-cdbr-east-05.cleardb.net/heroku_a7c7c4d171e9081",
+  "policy_link":"https://paperdaz.com/policy",
+  "default_password":"ffc55496adf8369aa033ead37f401766"
+ 
+}
+ 

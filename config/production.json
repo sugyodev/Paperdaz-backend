@@ -1,0 +1,7 @@
+{
+  "host": "paperdaz_feather_backend-app.feathersjs.com",
+  "port": "PORT",
+  "base_url": "https://backend.paperdaz.com",
+  "email_user":"postmaster@main.paperdaz.com",
+  "email_password":"ffc55496adf8369aa033ead37f401766-48d7d97c-d03cb53b"
+}
